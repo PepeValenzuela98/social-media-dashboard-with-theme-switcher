@@ -1,0 +1,40 @@
+$light-top-bh: hsl(225, 100%, 98%);
+$light-text-1: hsl(228, 12%, 44%);
+
+header {
+  padding-top: 40px;
+  padding-bottom: 100px;
+  background-color: $light-top-bh;
+  border-radius: 20px;
+  margin-top: -15px;
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+
+  .head-container {
+    display: flex;
+    flex-basis: 1140px;
+    justify-content: space-between;
+    @media screen and (max-width: 980px) {
+      flex-basis: initial;
+      max-width: 400px;
+      justify-content: initial;
+      flex-direction: column;
+    }
+
+    @media screen and (max-width: 400px) {
+      max-width: 200px;
+    }
+  }
+}
+
+.head-inf {
+  @media screen and (max-width: 980px) {
+    padding-bottom: 20px;
+    border-bottom: 1px solid $light-text-1;
+  }
+  span {
+    color: $light-text-1;
+    font-weight: 700;
+  }
+}

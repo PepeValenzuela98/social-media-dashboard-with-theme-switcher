@@ -1,0 +1,35 @@
+$light-card-bg-1: hsl(227, 47%, 96%);
+$light-card-bg-2: hsl(232, 33%, 91%);
+$light-text-1: hsl(228, 12%, 44%);
+
+.overview-card__item {
+  cursor: pointer;
+  background-color: $light-card-bg-1;
+  margin: 10px 5px;
+  padding: 30px;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: $light-card-bg-2;
+  }
+}
+
+.overview-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  span {
+    color: $light-text-1;
+    font-weight: 700;
+  }
+}
+
+.overview-card__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  h2 {
+    font-size: 32px;
+  }
+}

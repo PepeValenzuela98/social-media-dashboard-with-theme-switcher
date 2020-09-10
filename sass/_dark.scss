@@ -1,0 +1,111 @@
+$dark-bg: hsl(225, 17%, 14%);
+$dark-top-bh: hsl(232, 19%, 15%);
+$dark-card-bg-1: hsl(228, 28%, 20%);
+$dark-card-bg-2: hsl(228°, 26%, 27%);
+$dark-text-1: hsl(228, 34%, 66%);
+$dark-text-2: hsl(0, 0%, 100%);
+
+.dark {
+  -webkit-transition: 0.8s;
+  transition: 0.4s;
+  background-color: $dark-bg;
+
+  header {
+    -webkit-transition: 0.8s;
+    transition: 0.4s;
+    background-color: $dark-top-bh;
+  }
+
+  .head-inf {
+    @media screen and (max-width: 980px) {
+      border-bottom-color: $dark-text-1;
+    }
+    h1 {
+      -webkit-transition: 0.8s;
+      transition: 0.4s;
+      color: $dark-text-2;
+    }
+    span {
+      -webkit-transition: 0.8s;
+      transition: 0.4s;
+      color: $dark-text-1;
+    }
+  }
+
+  .toggle-switch {
+    span {
+      -webkit-transition: 0.8s;
+      transition: 0.4s;
+      color: $dark-text-2;
+    }
+  }
+
+  .main-card__item {
+    -webkit-transition: 0.8s;
+    transition: 0.4s;
+    background-color: $dark-card-bg-1;
+    &:hover {
+      background-color: $dark-card-bg-2;
+    }
+  }
+
+  .main-card__user {
+    -webkit-transition: 0.8s;
+    transition: 0.4s;
+    color: $dark-text-1;
+  }
+
+  .main-card__followers {
+    -webkit-transition: 0.8s;
+    transition: 0.4s;
+    color: $dark-text-2;
+    span {
+      -webkit-transition: 0.8s;
+      transition: 0.4s;
+      color: $dark-text-1;
+    }
+  }
+
+  .overview-today {
+    -webkit-transition: 0.8s;
+    transition: 0.4s;
+    color: $dark-text-2;
+  }
+
+  .overview-card__item {
+    -webkit-transition: 0.8s;
+    transition: 0.4s;
+    background-color: $dark-card-bg-1;
+
+    &:hover {
+      background-color: $dark-card-bg-2;
+    }
+  }
+
+  .overview-card__header {
+    span {
+      -webkit-transition: 0.8s;
+      transition: 0.4s;
+      color: $dark-text-1;
+    }
+  }
+
+  .overview-card__footer {
+    h2 {
+      -webkit-transition: 0.8s;
+      transition: 0.4s;
+      color: $dark-text-2;
+    }
+  }
+
+  .attribution {
+    -webkit-transition: 0.8s;
+    transition: 0.4s;
+    color: $dark-text-1;
+  }
+  .attribution a {
+    -webkit-transition: 0.8s;
+    transition: 0.4s;
+    color: $dark-text-2;
+  }
+}

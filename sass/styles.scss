@@ -1,0 +1,59 @@
+$main-font: "Inter", sans-serif;
+
+$green: hsl(163, 72%, 41%);
+$red: hsl(356, 69%, 56%);
+
+$light-bg: hsl(0, 0%, 100%);
+
+@use 'dark';
+@use 'head';
+@use 'toggle-button';
+@use 'main';
+@use 'main-cards';
+@use 'overview-cards';
+
+html,
+body,
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  height: 100%;
+}
+body {
+  -webkit-transition: 0.8s;
+  transition: 0.4s;
+  background-color: $light-bg;
+  font-family: $main-font;
+  height: 100%;
+  height: -moz-available; /* WebKit-based browsers will ignore this. */
+  height: -webkit-fill-available; /* Mozilla-based browsers will ignore this. */
+  height: fill-available;
+}
+
+.text-stadistic {
+  font-weight: 700;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    margin-right: 5px;
+  }
+}
+.good {
+  color: $green;
+}
+
+.bad {
+  color: $red;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

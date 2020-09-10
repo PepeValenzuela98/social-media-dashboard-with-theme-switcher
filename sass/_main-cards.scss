@@ -1,0 +1,85 @@
+$facebook: hsl(208, 92%, 53%);
+$twitter: hsl(203, 89%, 53%);
+$instagram: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+$youtube: hsl(348, 97%, 39%);
+
+$light-card-bg-1: hsl(227, 47%, 96%);
+$light-card-bg-2: hsl(232, 33%, 91%);
+$light-text-1: hsl(228, 12%, 44%);
+
+.main-card__item {
+  cursor: pointer;
+  flex: 1 0 0;
+  background-color: $light-card-bg-1;
+  padding: 0 35px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 5px;
+  margin: 0 5px;
+  position: relative;
+  @media screen and (max-width: 980px) {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  &:hover {
+    background-color: $light-card-bg-2;
+  }
+
+  img {
+    margin-right: 5px;
+  }
+}
+
+.main-card__user {
+  color: $light-text-1;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+.main-card__followers {
+  margin-top: 25px;
+  font-size: 68px;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  span {
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 5px;
+    color: $light-text-1;
+  }
+}
+
+.main-card__current-follows {
+  margin-top: 25px;
+}
+
+.fb {
+  border-top: 5px solid $facebook;
+}
+
+.tw {
+  border-top: 5px solid $twitter;
+}
+
+.ig {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background: $instagram;
+    height: 5px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+  }
+}
+
+.yt {
+  border-top: 5px solid $youtube;
+}
